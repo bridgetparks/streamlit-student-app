@@ -38,8 +38,6 @@ with st.form("add_student_form"):
                 st.error("⚠️ A student with that email already exists.")
             except Exception as e:
                 st.error(f"Error: {e}")
-        else:
-            st.warning("Please fill in both fields.")
 
 st.markdown("---")
 st.subheader("Current Students")
